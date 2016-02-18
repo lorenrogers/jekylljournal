@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require 'gli'
+require 'yaml'
 
 include GLI::App
 
@@ -12,7 +13,6 @@ arguments :strict
 desc 'Opens a post for the blog'
 command :open do |c|
   c.action do |global_options,options,args|
-    puts 'Config file not found, please create one.'
   end
 end
 
@@ -24,6 +24,21 @@ pre do |global,command,options,args|
   # chosen command
   # Use skips_pre before a command to skip this block
   # on that command only
+
+  options = { }
+
+  CONFIG_FILE = File.join(ENV['HOME'],'.jekylljournal.yaml')
+  if File.exists? CONFIG_FILE
+    config_options = YAML.load_file(CONFIG_FILE)
+    if !config_options
+      puts 'Config file empty, please see the readme.'
+    else
+      options.merge!(config_options)
+    end
+  else
+    puts 'Config file not found, please create one.'
+  end
+
   true
 end
 

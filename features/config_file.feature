@@ -11,3 +11,12 @@ Feature: Read the app configuration from a file
     Config file not found, please create one.
     """
 
+  Scenario: Empty dotfile
+    Given a file named "~/.jekylljournal.yaml" with:
+    """
+    """
+    When I run `jekylljournal`
+    Then the output should contain:
+    """
+    Config file empty, please see the readme.
+    """
