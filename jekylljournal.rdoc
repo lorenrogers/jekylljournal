@@ -1,0 +1,5 @@
+= jekylljournal
+
+Generate this with
+    jekylljournal rdoc
+After you have described your command line interface

@@ -1,0 +1,6 @@
+= jekylljournal
+
+Describe your project here
+
+:include:jekylljournal.rdoc
+
