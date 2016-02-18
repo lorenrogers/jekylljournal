@@ -4,22 +4,19 @@ require 'gli'
 include GLI::App
 
 program_desc 'Jekyll Journal is a super awesome way to write daily blog posts.'
-
 version Jekylljournal::VERSION
 
 subcommand_option_handling :normal
 arguments :strict
 
-# TODO: config file
-# http://stackoverflow.com/questions/6233124/where-to-place-access-config-file-in-gem
+desc 'Opens a post for the blog'
+command :open do |c|
+  c.action do |global_options,options,args|
+    puts 'Config file not found, please create one.'
+  end
+end
 
-desc 'Describe some switch here'
-switch [:s,:switch]
-
-desc 'Describe some flag here'
-default_value 'the default'
-arg_name 'The name of the argument'
-flag [:f,:flagname]
+default_command :open
 
 pre do |global,command,options,args|
   # Pre logic here
