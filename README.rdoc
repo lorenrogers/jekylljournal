@@ -1,7 +1,10 @@
-= jekylljournal
+= Jekyll Journal
 
 This is a super awesome way of writing daily blog posts
 with Jekyll.
+
+Gem on Rubygems:
+https://rubygems.org/gems/jekylljournal
 
 Source on Github:
 https://github.com/lorentrogers/jekylljournal
@@ -9,5 +12,14 @@ https://github.com/lorentrogers/jekylljournal
 Project management on Taiga:
 https://tree.taiga.io/project/lorentrogers-jekyll-journal/kanban
 
-:include:jekylljournal.rdoc
+Features are written as Job Stories:
+https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27
 
+This project uses GPL:
+https://gnu.org/licenses/gpl.html
+
+== Installation
+
+    gem install jekylljournal
+
+:include:jekylljournal.rdoc
