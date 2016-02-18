@@ -1,6 +1,7 @@
 = jekylljournal
 
-Describe your project here
+This is a super awesome way of writing daily blog posts
+with Jekyll.
 
 :include:jekylljournal.rdoc
 
