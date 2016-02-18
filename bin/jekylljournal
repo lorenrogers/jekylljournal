@@ -10,6 +10,9 @@ version Jekylljournal::VERSION
 subcommand_option_handling :normal
 arguments :strict
 
+# TODO: config file
+# http://stackoverflow.com/questions/6233124/where-to-place-access-config-file-in-gem
+
 desc 'Describe some switch here'
 switch [:s,:switch]
 
