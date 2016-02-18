@@ -3,5 +3,11 @@
 This is a super awesome way of writing daily blog posts
 with Jekyll.
 
+Source on Github:
+https://github.com/lorentrogers/jekylljournal
+
+Project management on Taiga:
+https://tree.taiga.io/project/lorentrogers-jekyll-journal/kanban
+
 :include:jekylljournal.rdoc
 
