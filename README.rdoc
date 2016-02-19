@@ -29,7 +29,7 @@ Project management on Taiga:
 https://tree.taiga.io/project/lorentrogers-jekyll-journal/kanban
 
 Features are written as Job Stories:
-https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27
+https://robots.thoughtbot.com/converting-to-jobs-stories
 
 This project uses GPL:
 https://gnu.org/licenses/gpl.html
