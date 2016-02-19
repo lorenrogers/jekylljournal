@@ -1,7 +1,23 @@
 = Jekyll Journal
 
-This is a super awesome way of writing daily blog posts
-with Jekyll.
+A super awesome way of writing daily blog posts with Jekyll.
+
+It's based on this proof of concept, built with bash:
+https://github.com/lorentrogers/Journal.sh
+
+== Installation
+
+First, you'll need to grab the gem:
+
+    gem install jekylljournal
+
+Then, configure your installation. Make a new file in your home
+directory called `.jekylljournal.yaml` and fill in the options
+below.
+
+    :blog_location: /path/to/your/jekyll/blog/root
+
+== Project Links
 
 Gem on Rubygems:
 https://rubygems.org/gems/jekylljournal
@@ -17,17 +33,5 @@ https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-stor
 
 This project uses GPL:
 https://gnu.org/licenses/gpl.html
-
-== Installation
-
-First, you'll need to grab the gem:
-
-    gem install jekylljournal
-
-Then, configure your installation. Make a new file in your home
-directory called `.jekylljournal.yaml` and fill in the options
-below.
-
-    :blog_location: /path/to/your/jekyll/blog/root
 
 :include:jekylljournal.rdoc
