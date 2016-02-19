@@ -18,5 +18,13 @@ Given(/^the blog post for (today|yesterday) (does|does not) exist$/) do |day, ex
 end
 
 Then(/^it (should|should not) (create|open) the post for (today|yesterday)$/) do |should, action, day|
-  pending # Write code here that turns the phrase above into concrete actions
+  format = '%Y-%m-%d'
+  date = day == 'today' ? Date.today.strftime(format) : Date.today.prev_day.strftime(format)
+  file_name = "/home/lorentrogers/journal/_posts/#{date}-#{date}.md"
+
+  if action == 'create'
+    write_file(file_name, 'dummy content')
+  else
+    pending
+  end
 end
