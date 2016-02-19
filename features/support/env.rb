@@ -8,11 +8,6 @@ Before do
   @puts = true
   @original_rubylib = ENV['RUBYLIB']
   ENV['RUBYLIB'] = LIB_DIR + File::PATH_SEPARATOR + ENV['RUBYLIB'].to_s
-
-  # Set the home directory to test the dotfiles.
-  # https://ariejan.net/2014/04/15/testing-home-with-cucumber-and-aruba/
-  set_environment_variable 'HOME', File.expand_path(File.join(expand_path("."), 'home'))
-  FileUtils.mkdir_p ENV['HOME']
 end
 
 After do
