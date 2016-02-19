@@ -20,3 +20,14 @@ Feature: Read the app configuration from a file
     """
     Config file empty, please see the readme.
     """
+
+  Scenario: Get blog dir from dotfile
+    Given a file named "~/.jekylljournal.yaml" with:
+    """
+    :blog_location: /home/lorentrogers/journal
+    """
+    When I run `jekylljournal`
+    Then the output should contain:
+    """
+    The blog location is /home/lorentrogers/journal
+    """

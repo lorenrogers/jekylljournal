@@ -20,6 +20,14 @@ https://gnu.org/licenses/gpl.html
 
 == Installation
 
+First, you'll need to grab the gem:
+
     gem install jekylljournal
+
+Then, configure your installation. Make a new file in your home
+directory called `.jekylljournal.yaml` and fill in the options
+below.
+
+    :blog_location: /path/to/your/jekyll/blog/root
 
 :include:jekylljournal.rdoc
