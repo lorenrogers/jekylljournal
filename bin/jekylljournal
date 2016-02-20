@@ -16,7 +16,10 @@ command :open do |c|
   c.action do |global_options,options,args|
     today = Date.today.strftime '%Y-%m-%d'
     file_name = "#{@options[:blog_location]}/_posts/#{today}-#{today}.md"
+    # create the file if it doesn't exist
+    # prepend yaml
     puts "Opening #{file_name}"
+    #system 'vim', file_name
   end
 end
 

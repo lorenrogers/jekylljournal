@@ -6,7 +6,7 @@ Feature: Open posts in a given blog
   Background:
     Given a valid dotfile exists
 
-  Scenario: No post exists for today
+  Scenario: Open a new post for today
     Given the blog post for today does not exist
     When I run `jekylljournal`
     Then it should create the post for today
@@ -17,7 +17,7 @@ Feature: Open posts in a given blog
     When I run `jekylljournal`
     Then it should open the post for today
 
-  Scenario: Open yesterday's post when it does not exist
+  Scenario: Open a new post for yesterday
     Given the blog post for yesterday does not exist
     When I run `jekylljournal`
     Then it should create the post for yesterday

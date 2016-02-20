@@ -23,7 +23,7 @@ Then(/^it (should|should not) (create|open) the post for (today|yesterday)$/) do
   file_name = "/home/lorentrogers/journal/_posts/#{date}-#{date}.md"
 
   if action == 'create'
-    write_file(file_name, 'dummy content')
+    step %(the file named "#{file_name}" should exist)
   else
     pending
   end
