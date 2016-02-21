@@ -17,9 +17,18 @@ command :open do |c|
     today = Date.today.strftime '%Y-%m-%d'
     file_name = "#{@options[:blog_location]}/_posts/#{today}-#{today}.md"
     # create the file if it doesn't exist
-    # prepend yaml
+    frontmatter = <<eol
+---
+layout: post
+title: #{today}
+---
+
+eol
+
+    File.write file_name, frontmatter unless File.file? file_name
+
     puts "Opening #{file_name}"
-    #system 'vim', file_name
+    system 'vim', file_name
   end
 end
 
