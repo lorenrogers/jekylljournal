@@ -1,13 +1,13 @@
 # Ensure we require the local version and not one we might have installed already
 require File.join([File.dirname(__FILE__),'lib','jekylljournal','version.rb'])
-spec = Gem::Specification.new do |s| 
+spec = Gem::Specification.new do |s|
   s.name = 'jekylljournal'
   s.version = Jekylljournal::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Loren Rogers'
+  s.email = 'loren@lorentrogers.com'
+  s.homepage = 'http://www.lorentrogers.com'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
+  s.summary = 'A super awesome way of writing daily blog posts with Jekyll.'
   s.files = `git ls-files`.split("
 ")
   s.require_paths << 'lib'
