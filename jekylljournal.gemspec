@@ -9,10 +9,11 @@ spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = 'A super awesome way of writing daily blog posts with Jekyll.'
   s.license = 'GPL-3.0'
-  spec.required_ruby_version = '>= 2.2.0'
+  s.required_ruby_version = '>= 2.2.0'
   s.files = `git ls-files`.split("
 ")
   s.require_paths << 'lib'
+  s.require_paths << 'lib/jekylljournal'
   s.has_rdoc = true
   s.extra_rdoc_files = ['README.rdoc','jekylljournal.rdoc']
   s.rdoc_options << '--title' << 'jekylljournal' << '--main' << 'README.rdoc' << '-ri'
@@ -21,5 +22,6 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('rake')
   s.add_development_dependency('rdoc')
   s.add_development_dependency('aruba')
+  s.add_development_dependency('jekylljournal')
   s.add_runtime_dependency('gli','2.13.4')
 end
