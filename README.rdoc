@@ -37,6 +37,9 @@ Here's what's in my `.zshrc` file:
 Gem on Rubygems:
 https://rubygems.org/gems/jekylljournal
 
+Bug tracking on Github:
+https://github.com/lorentrogers/jekylljournal/issues
+
 Source on Github:
 https://github.com/lorentrogers/jekylljournal
 
