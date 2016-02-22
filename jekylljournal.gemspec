@@ -8,6 +8,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = 'http://www.lorentrogers.com'
   s.platform = Gem::Platform::RUBY
   s.summary = 'A super awesome way of writing daily blog posts with Jekyll.'
+  s.license = 'GPL-3.0'
   s.files = `git ls-files`.split("
 ")
   s.require_paths << 'lib'
