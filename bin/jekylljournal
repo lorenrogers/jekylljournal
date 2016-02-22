@@ -2,6 +2,7 @@
 require 'gli'
 require 'yaml'
 require 'date'
+require './lib/jekylljournal'
 
 include GLI::App
 
@@ -14,21 +15,14 @@ arguments :strict
 desc 'Opens a post for the blog'
 command :open do |c|
   c.action do |global_options,options,args|
-    today = Date.today.strftime '%Y-%m-%d'
-    file_name = "#{@options[:blog_location]}/_posts/#{today}-#{today}.md"
-    # create the file if it doesn't exist
-    frontmatter = <<eol
----
-layout: post
-title: #{today}
----
+    @journal_handler.open
+  end
+end
 
-eol
-
-    File.write file_name, frontmatter unless File.file? file_name
-
-    puts "Opening #{file_name}"
-    system 'vim', file_name
+desc 'Adds all posts to git and commits them'
+command :save do |c|
+  c.action do
+    @journal_handler.save
   end
 end
 
@@ -40,21 +34,8 @@ pre do |global,command,options,args|
   # chosen command
   # Use skips_pre before a command to skip this block
   # on that command only
-
-  @options = { }
-
-  CONFIG_FILE = File.join(ENV['HOME'],'.jekylljournal.yaml')
-  if File.exists? CONFIG_FILE
-    config_options = YAML.load_file(CONFIG_FILE)
-    if !config_options
-      puts 'Config file empty, please see the readme.'
-    else
-      @options.merge!(config_options)
-    end
-  else
-    puts 'Config file not found, please create one.'
-  end
-
+  @journal_handler = Journalhandler.new
+  return false unless @journal_handler
   true
 end
 
