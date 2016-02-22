@@ -22,6 +22,16 @@ below.
 
     :blog_location: /path/to/your/jekyll/blog/root
 
+== Custom Alias
+
+It's super handy to map an alias to this app. My configuration just uses
+`j` to open up my daily journal. Pretty slick, if I do say so myself.
+Which I do.
+
+Here's what's in my `.zshrc` file:
+
+    alias j="jekylljournal"
+
 == Project Links
 
 Gem on Rubygems:
