@@ -32,6 +32,32 @@ Here's what's in my `.zshrc` file:
 
     alias j="jekylljournal"
 
+== Usage
+
+Once you've installed it, and set up your config file, you're ready to go.
+Fire it up with a mighty
+
+    j
+
+Boom.
+
+Oh yeah. That's the stuff. You should have Vim open to today's post.
+Go ahead and write yourself some sweet, sweet entries.
+
+Once you've finished that madness, save it with a rad
+
+    j s
+
+Then preview it:
+
+    j p
+
+Now you can browse to
+
+    localhost:4000
+
+and check out your awesome post.
+
 == Project Links
 
 Gem on Rubygems:
