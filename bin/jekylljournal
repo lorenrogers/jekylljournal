@@ -13,16 +13,23 @@ subcommand_option_handling :normal
 arguments :strict
 
 desc 'Opens a post for the blog'
-command :open do |c|
+command :open, :o do |c|
   c.action do |global_options,options,args|
     @journal_handler.open
   end
 end
 
 desc 'Adds all posts to git and commits them'
-command :save do |c|
+command :save, :s do |c|
   c.action do
     @journal_handler.save
+  end
+end
+
+desc 'Starts a Jekyll preview server'
+command :preview, :p do |c|
+  c.action do
+    @journal_handler.preview
   end
 end
 

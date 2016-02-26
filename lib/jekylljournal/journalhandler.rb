@@ -57,6 +57,12 @@ eol
       puts 'done.'
     end
 
+    # Runs a preview jekyll server locally
+    def preview
+      puts 'Starting preview server at localhost:4000'
+      `cd #{@options[:blog_location]};jekyll serve;`
+    end
+
     private
 
     def run_git_cmd cmd
