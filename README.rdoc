@@ -70,9 +70,6 @@ https://github.com/lorentrogers/jekylljournal/issues
 Source on Github:
 https://github.com/lorentrogers/jekylljournal
 
-Project management on Taiga:
-https://tree.taiga.io/project/lorentrogers-jekyll-journal/kanban
-
 Features are written as Job Stories:
 https://robots.thoughtbot.com/converting-to-jobs-stories
 
