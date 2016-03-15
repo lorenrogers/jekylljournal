@@ -6,6 +6,7 @@ A super awesome way of writing daily blog posts with Jekyll.
 {<img src="https://codeclimate.com/github/lorentrogers/jekylljournal/badges/gpa.svg" />}[https://codeclimate.com/github/lorentrogers/jekylljournal]
 {<img src="https://codeclimate.com/github/lorentrogers/jekylljournal/badges/coverage.svg" />}[https://codeclimate.com/github/lorentrogers/jekylljournal/coverage]
 {<img src="https://gemnasium.com/lorentrogers/jekylljournal.svg" alt="Dependency Status" />}[https://gemnasium.com/lorentrogers/jekylljournal]
+{<img src="https://img.shields.io/gem/dt/jekylljournal.svg" alt="Gem Downloads" />}[https://rubygems.org/gems/jekylljournal]
 
 It's based on this proof of concept, built with bash:
 https://github.com/lorentrogers/Journal.sh
