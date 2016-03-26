@@ -26,8 +26,7 @@ below.
 == Custom Alias
 
 It's super handy to map an alias to this app. My configuration just uses
-`j` to open up my daily journal. Pretty slick, if I do say so myself.
-Which I do.
+`j` to open up my daily journal.
 
 Here's what's in my `.zshrc` file:
 
@@ -35,21 +34,19 @@ Here's what's in my `.zshrc` file:
 
 == Usage
 
-Once you've installed it, and set up your config file, you're ready to go.
-Fire it up with a mighty
+Once you've installed it, and set up your config file, you're ready to go:
 
     j
 
 Boom.
 
-Oh yeah. That's the stuff. You should have Vim open to today's post.
-Go ahead and write yourself some sweet, sweet entries.
+You should have Vim open to today's post.
 
-Once you've finished that madness, save it with a rad
+Once you've finished, save the file and close it. Then you can save the journal to git:
 
     j s
 
-Then preview it:
+Or preview it if you like:
 
     j p
 
@@ -57,7 +54,7 @@ Now you can browse to
 
     localhost:4000
 
-and check out your awesome post.
+and check out your post.
 
 == Contributing
 
