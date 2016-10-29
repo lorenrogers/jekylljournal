@@ -32,6 +32,7 @@ module Jekylljournal
 ---
 layout: post
 title: #{today}
+tags: []
 ---
 
 eol
